@@ -6,6 +6,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import LoginScreen from '../screens/LoginScreen';
 import RegisterScreen from '../screens/RegisterScreen';
 import ReflectionScreen from '../screens/ReflectionScreen';
+import DashboardScreen from '../screens/DashboardScreen';
 import ProfileScreen from '../screens/ProfileScreen';
 
 import { COLORS } from '../utils/helpers';
@@ -56,6 +57,16 @@ function MainTabs() {
           tabBarLabel: 'Reflect',
           tabBarIcon: ({ color, size }) => (
             <TabIcon emoji="✍️" color={color} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Dashboard"
+        component={DashboardScreen}
+        options={{
+          tabBarLabel: 'Dashboard',
+          tabBarIcon: ({ color, size }) => (
+            <TabIcon emoji="📊" color={color} />
           ),
         }}
       />

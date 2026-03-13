@@ -2,15 +2,14 @@ import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
-// ⚠️ IMPORTANT: Replace these with your actual Firebase project config
-// Go to Firebase Console → Project Settings → Your Apps → Config
 const firebaseConfig = {
-  apiKey: 'YOUR_API_KEY',
-  authDomain: 'YOUR_PROJECT.firebaseapp.com',
-  projectId: 'YOUR_PROJECT_ID',
-  storageBucket: 'YOUR_PROJECT.appspot.com',
-  messagingSenderId: 'YOUR_SENDER_ID',
-  appId: 'YOUR_APP_ID',
+  apiKey: 'AIzaSyAuGWTQjsVrt7PpNAGuxTtBx8-D8Qb41h8',
+  authDomain: 'mindmirror-2425.firebaseapp.com',
+  projectId: 'mindmirror-2425',
+  storageBucket: 'mindmirror-2425.firebasestorage.app',
+  messagingSenderId: '150657961068',
+  appId: '1:150657961068:web:3ec5d35e0f18cf1ebd1c49',
+  measurementId: 'G-RHWGJELVWH',
 };
 
 const app = initializeApp(firebaseConfig);
